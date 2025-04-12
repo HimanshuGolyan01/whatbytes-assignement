@@ -12,15 +12,19 @@ export default function Home() {
      <div>
       <Navbar/>
      </div>
-     <div className="flex justify-start ">
-      <Sidebar/>
-      <div className="flex flex-col gap-4 pl-12 w-[50rem]">
-        <Skillset/>
-        <ComparisonGraph/>
+     <div className="flex justify-start">
+      <div className="border-r border-gray-400">
+        <Sidebar/>
       </div>
-      <div className="flex flex-col gap-4  ml-6 mr-5 w-[40rem]">
-        <SyllabusAnalysis/>
-        <QuestionAnalysis/>
+      <div className="flex flex-col md:flex-row">
+        <div className="flex flex-col gap-4 pl-12 pr-10">
+          <Skillset/>
+          <ComparisonGraph/>
+        </div>
+        <div className="flex flex-col gap-4  ml-6 pr-10">
+          <SyllabusAnalysis/>
+          <QuestionAnalysis/>
+        </div>
       </div>
      </div>
     </div>
